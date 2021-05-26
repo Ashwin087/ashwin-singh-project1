@@ -1,0 +1,9 @@
+@media(max-width: 410px){
+    .directory-section .icon-container {
+        width: 100%;
+    }
+
+        ul li:nth-of-type(2) {
+        display: none;
+    }
+}

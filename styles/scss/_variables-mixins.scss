@@ -1,0 +1,103 @@
+// Variables
+$light-blue: #EAFEFC;
+$yellow: #FDD908;
+$dark-blue: #0d457F;
+$white: #ffffff;
+
+$header-font: 'IM Fell English', serif;
+$default-font: 'Roboto', sans-serif;
+
+$regular: 20px;
+$medium: 25px;
+$heading: 40px;
+$heading-large: 45px;
+
+// Mixins
+@mixin hero-image($height) {
+    height: $height;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+@mixin image {
+    img {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+}
+
+@mixin text-container($size) {
+    text-align: left;
+    h2 {
+        font-size: $size;
+        font-family: $header-font;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        color: $dark-blue;
+        width: 100%;
+    }
+    p {
+        line-height: 28px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-shadow-left {
+    box-shadow: -20px 20px 0px 0px $yellow;
+    -webkit-box-shadow: -20px 20px 0px 0px $yellow;
+    -moz-box-shadow: -20px 20px 0px 0px $yellow;
+}
+
+@mixin box-shadow-right {
+    box-shadow: 20px 20px 0px 0px $yellow;
+    -webkit-box-shadow: 20px 20px 0px 0px $yellow;
+    -moz-box-shadow: 20px 20px 0px 0px $yellow;
+}
+
+@mixin space-address-bar {
+    .user-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5%;
+    }
+
+    input {
+    width: calc((100% / 2) - 2%);
+    }
+    
+    input[type="text"] {
+    margin-right: 2%;
+    }
+
+    input[type="email"] {
+    margin-left: 2%;
+    }
+}
+
+@mixin hide-border {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:solid;
+    border-color: $yellow;
+}
+
+@mixin button ($background-color, $color) {
+    width: 100%;
+    background-color: $background-color;
+    color: $color;
+    font-family: $header-font;
+    text-transform: uppercase;
+    padding: 1.2%;
+}

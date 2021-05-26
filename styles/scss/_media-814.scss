@@ -1,0 +1,113 @@
+@media(max-width: 814px){
+
+    .home {
+        height: 80vh;
+        background-position: 30% 55%;
+    }
+
+    .home nav {
+        display: none;
+    }
+
+    .home h1{
+        font-size: 60px;
+        top: 5rem;
+        width: 80%;
+    }
+    
+    .home .boat-container {
+        position: absolute;
+        top: 44.7vh;
+    }
+
+    .nav-icon-container {
+        display: contents;
+    }
+
+    .fas.fa-bars {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        font-size: 30px;
+        color: white;
+    }
+
+    .directory-section {
+        padding-bottom: 5rem;
+    }
+
+    .directory-section ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 2.5rem 0px;
+    }
+
+    .directory-section a {
+        font-size: 25px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .features-section .grid-top-left {
+    grid-row: 4 / span 1;
+}
+
+.features-section .grid-top-right  {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    margin: auto;
+    width: 90%;
+}
+
+.features-section .grid-bottom-left {
+    grid-row: 3 / span 1;
+    margin: auto;
+    width: 90%;
+}
+
+.features-section .grid-bottom-right {
+    grid-row: 2 / span 1;
+}
+
+.features-section .grid-bottom-left p,
+.features-section .grid-top-right p {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.service-container .text-container p,
+.service-container .text-container,
+.service-container .text-container.grid-bottom-left {
+    text-align: center;
+    padding-top: 0;
+}
+
+.features-section,
+.features-section .image-container,
+.features-section .text-container {
+    padding: 0;
+}
+
+.contest-container {
+align-items: center;
+padding: 10% 0 10%;
+flex-direction: column;
+}
+
+.contest-section .text-container {
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 4rem;
+}
+
+.vacation-section .wrapper {
+    text-align: center;
+}
+
+}
+

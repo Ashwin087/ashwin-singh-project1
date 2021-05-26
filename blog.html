@@ -6,24 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f7d525fa3f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="blog-header">
+        <div class="blog">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <i class="fas fa-bars"></i>
+                <h1>Blog</h1>
+            </div>
         </div>
     </header>
-    <main>
-        <h2>BLOG STUFF</h2>
+
+    <main class="blog-section-container">
+            <section class="blog-section">
+                    <div class="blog-sub-wrapper">
+                        <div class="blog-post-container">
+                            <div class="image-container">
+                                <img src="./assets/blog-post-image.jpg" alt="Rope holding docked ship on water">
+                            </div>
+                            <div class="blog-text-container">
+                                <div class="wrapper">
+                                    <h2>Next Destination</h2>
+                                    <p>Monday October 30, 2019 by Sulaire</p>
+                                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nihb lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolar arcu, sit amet blandit dolar mollis nec. Donec viverra elefiend lacu.</p>
+                                    <p>Lorem ipsum dolar sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat egat semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce prottitor a mi at suscipt.</p>
+                                    <p>Paesent facilisis dolar sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-section">
+                        <div class="wrapper">
+                            <h2>Comments:</h2>
+                            <div class="posted-comment">
+                                <div class="image-container">
+                                    <img src="./assets/comment-1.jpg" alt="profile picture of man smiling">
+                                </div>
+                                <div class="comment-container">
+                                    <h3>Tuesday October 9th, 2019 by Ali</h3>
+                                    <p>Fusce vehicula dolar arcu, sit amet bladit dolar mollis nec. Donec viverra elefend lacus, vitae ullamcorper metus. Sed sollictudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus...</p>
+                                </div>
+                            </div>
+                            <div class="posted-comment">
+                                <div class="image-container">
+                                    <img src="./assets/comment-2.jpg" alt="profile picture of woman smiling">
+                                </div>
+                                <div class="comment-container">
+                                    <h3>Wednesday October 10th, 2019 by Lisa</h3>
+                                    <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="submit" class="comment-form">
+                            <div class="wrapper">
+
+                                <fieldset class="user-info">
+                                    <label for="name" class="sr-only">Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                    
+                                    <label for="email" class="sr-only">Email address</label>
+                                    <input type="email" name="email" id="email" placeholder="Email address">
+                                </fieldset>
+                                <label for="comment" class="sr-only"></label>
+                                <textarea name="Comment" id="comment" cols="30" rows="10" placeholder="Comment" required ></textarea>
+                                <button type="submit">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+            </section>
+            
+            <aside>
+                <div class="aside-container">
+                    <div class="image-container">
+                        <img src="./assets/blog-side-image.jpg" alt="View of boat deck and sails">
+                    </div>
+                    <div class="aside-sub-container mission">
+                        <h2>Our Mission</h2>
+                        <p>Nam dapibus nis; vitae elit fringilla retrum. Aenean sollicitudin, erat a elementum. <br> Find out More.
+                        </p>
+                    </div>
+                    <div class="aside-sub-container recent-posts">
+                        <h2>Recent Posts</h2>
+                        <ul>
+                            <li>Donec facilisis tortor ut</li>
+                            <li>Augue lacinia at viverra</li>
+                            <li>Semper sed sapien metus</li>
+                            <li>Scelerisque nec pharetra id</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
     </main>
+    
+    <footer>
+        <p class="copyright">Copyright © 2019 HackerYou</p>
+    </footer>
+    
 </body>

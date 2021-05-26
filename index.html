@@ -5,65 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f7d525fa3f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <header>
-        <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>Boat Ride Adventures</h1>
-        </div>
-        <div class="image-container">
-            <img src="./assets/home-box-header.png" alt="Large white cruise ship on water.">
+        <div class="home">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icon-container">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <h1>Boat Ride Adventures</h1>
+            </div>
+            <div class="boat-container">
+                <div class="image-container">
+                    <img src="./assets/home-box-header.png" alt="Large white cruise ship on water.">
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="features-section">
+        <section class="directory-section">
             <div class="wrapper">
                 <ul>
-                    <li class="destination sub-container">
+                    <li>
                         <div class="icon-container">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="text-container">
-                            <h2>New Destination</h2>
+                            <h2><a href="#destination">New Destination</a> </h2>
                             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolar placerat</p>
                         </div>
                     </li>
-                    <li class="community sub-container">
+                    <li>
                         <div class="icon-container">
                             <i class="fas fa-users"></i>
                         </div>
                         <div class="text-container">
-                            <h2>Community</h2>
+                            <h2><a href="#contest">Community</a></h2>
                             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolar placerat</p>
                         </div>
                     </li>
-                    <li class="blog sub-container">
+                    <li>
                         <div class="icon-container">
                             <i class="fas fa-file"></i>
                         </div>
                         <div class="text-container">
-                            <h2>Blog</h2>
+                            <h2><a href="./blog.html">Blog</a></h2>
                             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolar placerat</p>
                         </div>
                     </li>
-                    <li class="contact sub-container">
+                    <li>
                         <div class="icon-container">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="text-container">
-                            <h2>Get in Touch</h2>
+                            <h2><a href="./contact.html">Get in Touch</a></h2>
                             <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolar placerat</p>
                         </div>
                     </li>
@@ -71,39 +80,37 @@
         </section>
 
 
-        <section class="service-section" id="about">
-            <div class="wrapper">
-                <div class="service-container-1">
-                    <div class="image-container">
-                        <img src="./assets/left-image.jpg" alt="White ship floating on the sea.">
-                    </div>
-                    <div class="text-container">
-                        <h2>Our Programs</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus sec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lactus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="service-container-2">
-                    <div class="text-container">
+        <section class="features-section">
+                            
+            <!-- <div class="wrapper"> -->
+                <div class="service-container">
+                        <div class="image-container grid-top-left">
+                            <img src="./assets/left-image.jpg" alt="White ship floating on the sea.">
+                        </div>
+                        <div class="text-container grid-top-right">
+                            <h2>Our Programs</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus sec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lactus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel</p>
+                            <a href="#" class="read-more" alt="read more about our programs">Read More</a>
+                        </div>
+                    <div class="text-container grid-bottom-left" id="destination">
                         <h2>New Locations</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus sec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lactus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <a href="#" class="read-more" alt="find out more about our locations">Read More</a>
                     </div>
-                    <div class="image-container">
+                    <div class="image-container grid-bottom-right">
                         <img src="./assets/right-image.jpg" alt="Looking down from the front tip of a boat into clear shallow water.">
                     </div>
                 </div>
+                <!-- </div> -->
             </div>
         </section>
         
 
         <section class="vacation-section">
             <div class="wrapper">
-                <div class="text-container">
-                    <h2>Extra Vacation Days?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus sec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lactus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat.</p>
-                    <a href="#" class="find-out-more read-more" alt="find out more about trip contest">Find Out More </a>
-                </div>
+                <h2>Extra Vacation Days?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus sec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lactus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat.</p>
+                <a href="#" class="find-out-more read-more" alt="find out more about trip contest">Find Out More </a>
             </div>
             <div class="image-container">
                 <img src="./assets/banner.jpg" alt="Couple in a rowboat on clear waters in a mountain/forrest area.">
@@ -111,9 +118,9 @@
         </section>
 
 
-        <section class="contest-section">
+        <section class="contest-section" id="contest">
             <div class="wrapper">
-                <div class="contest ">
+                <div class="contest-container">
                     <div class="image-container">
                         <img src="./assets/small-box.jpg" alt="Rear view of long haired woman wearing a black hat looking at mountains. ">
                     </div>
@@ -123,19 +130,23 @@
                         <a href="#" class="find-out-more read-more">Find Out More</a>
                     </div>
                 </div>
-                <div class="image-block">
-                    <ul>
-                        <li class="image-container">
-                            <img src="./assets/home-image-3@2x.jpg"
-                            alt="Small white ship on calm blue water with clear skies.">
-                        </li>
-                        <li class="image-container">
-                            <img src="./assets/home-image-1@2x.jpg" alt="View from behind ship guard rails looking out at sea with clear skies.">
-                        </li>
-                        <li class="image-container">
-                            <img src="./assets/home-image-2@2x.jpg" alt="Side of ship viewing ropes connecting to teh sail.">
-                        </li>
-                    </ul>
+            </div>
+            <div class="gallery-section">
+                <div class="wrapper">
+                    <div class="gallery">
+                        <ul>
+                            <li class="image-container">
+                                <img src="./assets/home-image-3@2x.jpg" alt="Small white ship on calm blue water with clear skies.">
+                            </li>
+                            <li class="image-container">
+                                <img src="./assets/home-image-1@2x.jpg"
+                                    alt="View from behind ship guard rails looking out at sea with clear skies.">
+                            </li>
+                            <li class="image-container">
+                                <img src="./assets/home-image-2@2x.jpg" alt="Side of ship viewing ropes connecting to teh sail.">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -144,9 +155,5 @@
     <footer>
         <p class="copyright">Copyright © 2019 HackerYou</p>
     </footer>
-<!-- Comment for Git Pull    -->
-<!-- Stashing  -->
-<!-- Stashing on Blog Branch -->
-<!-- Main Branch Comment -->
 </body>
 </html> 

@@ -1,0 +1,48 @@
+@media(max-width: 900px){
+    .vacation-section .wrapper h2,
+    .contest-section .text-container h2,
+    .service-container .text-container h2 {
+        font-size: 30px;
+    }
+
+    .features-section .image-container,
+    .features-section .text-container {
+        padding: 4rem 0 3rem;
+    }
+
+    .read-more, 
+    .find-out-more {
+        font-size: 20px;
+    }
+
+    .home .boat-container {
+        position: absolute;
+        top: 12vh;
+    }
+
+    .home .image-container {
+        min-width: 400px;
+        flex-basis: 45%;
+    }
+
+.features-section .grid-bottom-left {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+    .features-section .image-container,
+    .features-section .text-container {
+        padding-top: 0px;
+    }
+
+    .features-section .grid-top-left img,
+    .features-section .grid-bottom-right img {
+        box-shadow: none;
+    }
+
+        .directory-section a {
+        font-size: 25px;
+    }
+
+}

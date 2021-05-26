@@ -1,0 +1,178 @@
+.blog-section-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+aside {
+    width: 25%;
+}
+
+.blog-section {
+    width: 55%;
+}
+
+
+// Blog Section
+.blog-sub-wrapper {
+    position: relative;
+    margin-top: -15%;
+}
+
+.blog-section .image-container {
+    @include image;
+}
+
+.blog-post-container .image-container img {
+    @include box-shadow-left;
+    position: relative;
+    top: -19px;
+}
+
+.blog-text-container {
+    @include text-container(45px);
+    position: relative;
+    padding-bottom: 15%;
+    right: 20px;
+}
+
+.blog-text-container h2 {
+    padding: 7.5% 0 0px;
+}
+
+.blog-text-container p {
+    padding: 15px 0;
+}
+
+.blog-text-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 10px;
+    background-color: $yellow;
+}
+
+.blog-text-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    background-color: $yellow;
+}
+
+// Comment Section
+.comment-section .wrapper {
+    @include text-container(45px);
+    padding: 10% 0 8%;
+}
+
+.posted-comment {
+    display: flex;
+    justify-content: space-between;
+    @include text-container(45px);
+}
+
+.posted-comment:first-of-type {
+    padding-bottom: 12%;
+}
+
+.posted-comment:last-of-type {
+    padding-bottom: 5%;
+}
+
+.posted-comment .image-container {
+    width: 100px;
+    height: 100px;
+}
+
+.posted-comment .comment-container{
+    width: 95%;
+    padding-left: 60px;
+}
+
+.comment-container h3 {
+    font-size: 20px;
+    color: $dark-blue;
+    padding-bottom: 1%;
+}
+
+
+
+// Forms
+.comment-form {
+    padding-bottom: 10%;
+    @include space-address-bar;
+}
+
+.comment-form .wrapper,
+.comment-form .user-info {
+    border: none;
+    padding: 0;
+}
+
+.comment-form .wrapper {
+    @include flex-center;
+    flex-direction: column;
+}
+
+.comment-form input,
+.comment-form textarea {
+    background-color: $light-blue;
+    width: 100%;
+    resize: none;
+    padding: 2% 3%;
+    position: relative;
+    @include hide-border;
+}
+
+.comment-form textarea {
+    border: 2px solid $yellow;
+    margin-bottom: 2.5%;
+}
+
+.comment-form button[type="submit"] {
+    @include button($dark-blue, $yellow);
+}
+
+
+
+// Aside
+aside {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.aside-container {
+    background-color: $dark-blue;
+    margin-top: 25%;
+}
+
+.aside-container .image-container {
+    width: 100%;
+    position: relative;
+    top: -5%;
+    right: 15%;
+}
+
+.aside-container .image-container img {
+    width: 110%;
+}
+
+.aside-sub-container {
+    @include text-container(25px);
+    color: $white;
+    padding: 35px 20px 30px;
+}
+
+.aside-sub-container h2{
+    color: $yellow;
+}
+
+.aside-sub-container li {
+    line-height: 40px;
+    list-style: disc;
+    position: relative;
+    list-style-position: inside;
+}

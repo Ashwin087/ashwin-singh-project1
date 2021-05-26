@@ -1,0 +1,58 @@
+@media(max-width: 1280px){
+
+    .home .boat-container {
+        position: absolute;
+        top: 0;
+    }
+
+    .home .image-container {
+        flex-basis: 45%;
+    }
+
+    .directory-section {
+        padding-bottom: 10rem;
+        padding-top: 0px;
+    }
+
+    .directory-section a {
+        font-size: 30px;
+    }
+
+    .directory-section .icon-container {
+        width: 180px;
+    }
+
+    .service-container {
+    gap: 0 8%;
+
+    }
+    .features-section {
+        padding: 3rem 0 0;
+    }
+
+    .features-section .grid-top-left {
+        top: 0;
+    }
+
+    .features-section .grid-top-right {
+        padding-top: 3rem;
+    }
+
+    .features-section .grid-top-right p {
+        padding-right: 10%;
+    }
+
+    .features-section .grid-bottom-left {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .features-section .grid-bottom-left p {
+        padding-left: 10%;
+    }
+
+    .image-container.grid-bottom-right {
+        align-self: center;
+        padding-top: 0px;
+    }
+}

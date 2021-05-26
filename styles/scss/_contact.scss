@@ -1,0 +1,94 @@
+.contact-info-form-section>.wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contact-info-form-section {
+    position: relative;
+        padding-bottom: 12%;
+}
+
+.contact-info-sub-wrapper {
+    width: 25%;
+    font-size: 25px;
+    line-height: 28px;
+    min-width: 350px;
+    letter-spacing: 1.1px;
+    padding-top: 6%;
+}
+
+.contact-info-form-section a {
+    font-style: normal;
+}
+
+.social-media-container ul {
+    display: flex;
+    padding: 12px 0 20px;
+}
+
+.social-media-container ul a {
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.contact-info-sub-container {
+    padding-top: 1.2rem;
+}
+
+.email-form {
+    @include space-address-bar;
+    @include box-shadow-right;
+    background-color: $dark-blue;
+    padding: 5% 1% 2%;
+    position: absolute;
+    right: 4%;
+    top: -35%;
+    width: 60%;
+}
+
+.email-form .wrapper,
+.email-form .user-info {
+    border: none;
+    padding: 0;
+}
+
+.email-form .wrapper {
+    @include flex-center;
+    flex-direction: column;
+}
+
+.email-form .user-info {
+    margin-bottom: 1%;
+}
+
+.email-form input,
+.email-form textarea {
+    background-color: $light-blue;
+    width: 100%;
+    resize: none;
+    padding: 2% 3%;
+    position: relative;
+    @include hide-border;
+    background-color: $dark-blue;
+    color: $white;
+}
+
+.email-form textarea {
+    border: 2px solid $yellow;
+    margin-bottom: 4%;
+}
+
+.email-form button[type="submit"] {
+    @include button($yellow, $dark-blue);
+}
+
+.email-form textarea::placeholder,
+.email-form input::placeholder {
+    color: $white;
+    opacity: 1;
+}
+
+.email-form .submit-button {
+    margin: 1% 2% 2%;
+}

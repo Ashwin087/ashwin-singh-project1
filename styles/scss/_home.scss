@@ -1,0 +1,209 @@
+// Home Page
+// Directory Section
+.directory-section {
+    padding: 7rem 0px 10rem
+}
+
+.directory-section a {
+    font-size: 45px;
+}
+
+.directory-section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15% 0.5%;
+    width: 100%;
+}
+
+.directory-section li {
+    @include text-container(45px);
+    display: flex;
+}
+
+.directory-section i {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $dark-blue;
+}
+
+.directory-section .icon-container {
+background: $yellow;
+border-radius: 100%;
+width: 145px;
+height: 50px;
+position: relative;
+display: inline-block;
+margin-top: 1%;
+}
+
+.directory-section .text-container {
+    padding-left: 25px;
+}
+
+
+// Features Section
+.features-section h2 a {
+    width: 100%;
+}
+
+.features-section {
+    background-color: $dark-blue;
+    position: relative;
+}
+
+.features-section .image-container,
+.features-section .text-container {
+    padding-top: 10%;
+}
+
+.service-container {
+    gap: 8% 8%;
+}
+
+.service-container .text-container {
+    @include text-container(40px);
+    color: $white;
+}
+
+.service-container .text-container h2 {
+    color: $white;
+    padding-bottom: 13px;
+}
+
+.service-container .text-container p {
+    padding-bottom: 55px;
+    text-align: left;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0 15%;
+    margin: 0 auto;
+}
+
+.features-section .grid-top-left {
+    position: relative;
+    top: -25%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.features-section .grid-top-left img{
+    @include box-shadow-right;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.features-section .grid-top-right {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    padding-top: 6rem;
+}
+
+.features-section .grid-top-right p {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    padding-right: 18%;
+}
+
+
+.features-section .grid-bottom-left {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.features-section .grid-bottom-left p {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    padding-left: 18%;
+}
+
+.image-container.grid-bottom-right {
+    align-self: self-end;
+}
+
+.features-section .grid-bottom-right img{
+    @include box-shadow-left;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    // width: 100%;
+}
+
+.service-container .text-container.grid-bottom-left {
+    text-align: right;
+}
+
+
+
+
+// Vacation Section
+.vacation-section .wrapper {
+    padding: 10% 0px;
+    @include flex-center;
+    flex-direction: column;
+    width: 70%;
+    @include text-container(45px)
+}
+
+.vacation-section p {
+    padding-bottom: 50px;
+    width: 82%;
+}
+
+.vacation-section .image-container {
+    @include image;
+}
+
+
+
+// Contest Section
+.contest-container {
+    @include flex-center;
+    padding: 10% 0 10%;
+}
+
+.contest-container .image-container {
+    flex: 1 1 45%;
+}
+
+.contest-container .image-container img {
+    @include box-shadow-left;
+}
+
+.contest-section .text-container {
+    @include text-container(45px);
+    flex: 1 2 auto;
+    padding-left: 100px;
+}
+
+.contest-section .text-container p {
+    padding-bottom: 40px;
+}
+
+// Gallery Section
+.gallery-section {
+    background-color: $dark-blue;
+    padding: 90px 0;
+}
+
+.gallery li {
+    width: calc(100% / 3);
+    @include image;
+}
+
+.gallery ul {
+    @include flex-center;
+}
+
+.gallery li:nth-child(2) {
+    margin: 0 40px;
+}
+
