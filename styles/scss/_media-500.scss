@@ -8,6 +8,37 @@
         min-width: 300px;
     }
 
+    .blog nav,
+    .contact nav {
+        display: none;
+    }
+
+    .blog .nav-icon-container,
+    .contact .nav-icon-container {
+        display: contents;
+    }
+
+    .contact .fas.fa-bars, 
+    .blog .fas.fa-bars {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        font-size: 30px;
+        color: white;
+    }
+
+    .blog h1 {
+        padding-top: 44vh;
+        font-size: 60px;
+    }
+
+    .contact h1 {
+        width: 100%;
+        padding-top: 19vh;
+        font-size: 60px;
+    }
+
+
     .gallery ul li:nth-of-type(3) {
         display: none;
     }
@@ -17,7 +48,7 @@
     }
 
     .text-container.grid-top-right {
-        padding: 3rem 0rem 0rem;
+        padding: 3rem 0rem 2rem;
     }
     
     .text-container.grid-bottom-left {
@@ -30,5 +61,54 @@
 
     .vacation-section .image-container img {
         height: 30vh;
+    }
+
+    .blog-section {
+        width: 100%;
+    }
+
+    .comment-section .wrapper h2, 
+    .blog-text-container h2 {
+        font-size: 30px;
+    }
+
+    .comment-section .wrapper p,
+    .blog-text-container p {
+        font-size: 16px;
+    }
+
+    .contact-info-sub-wrapper {
+        flex-direction: column-reverse;
+        padding: 2rem 0px;
+    }
+
+    .contact-info-sub-container {
+        padding-bottom: 1rem;
+    }
+
+    .contact-info-form-section {
+    position: relative;
+    padding-bottom: 0;
+    }
+
+    .email-form {
+        box-shadow: none;
+    }
+
+    .comment-form .user-info,
+    .email-form .user-info {
+        flex-direction: column;
+    }
+
+    #email {
+        margin: 2% 0;
+    }
+
+    .social-media-container ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 12px 0 20px;
+        flex-direction: row;
     }
 }

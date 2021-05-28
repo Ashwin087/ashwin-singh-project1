@@ -8,7 +8,7 @@ aside {
 }
 
 .blog-section {
-    width: 55%;
+    width: 66%;
 }
 
 
@@ -142,17 +142,20 @@ aside {
 aside {
     width: 20%;
     margin: 0 auto;
+    max-height: 970px;
 }
 
 .aside-container {
     background-color: $dark-blue;
-    margin-top: 25%;
+    margin-top: 35%;
+    position: relative;
+    height: 100%;
 }
 
 .aside-container .image-container {
     width: 100%;
     position: relative;
-    top: -5%;
+    top: -3%;
     right: 15%;
 }
 
@@ -163,7 +166,7 @@ aside {
 .aside-sub-container {
     @include text-container(25px);
     color: $white;
-    padding: 35px 20px 30px;
+    padding: 0px 20px 3.5rem;
 }
 
 .aside-sub-container h2{

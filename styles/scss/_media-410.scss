@@ -6,4 +6,23 @@
         ul li:nth-of-type(2) {
         display: none;
     }
+
+
+    .email-form input[type=text],
+    .email-form input[type=email],
+    .email-form textarea,
+    .comment-form input[type=text],
+    .comment-form input[type=email],
+    .comment-form textarea {
+        font-size: 18px;
+    }
+
+    .contact-info-sub-wrapper {
+        min-width: 300px;
+    }
+
+    .contact-info-form-section a {
+        font-style: normal;
+        font-size: 19px;
+    }
 }

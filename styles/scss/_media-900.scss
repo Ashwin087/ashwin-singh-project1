@@ -25,11 +25,10 @@
         flex-basis: 45%;
     }
 
-.features-section .grid-bottom-left {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
+    .features-section .grid-bottom-left {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 
     .features-section .image-container,
     .features-section .text-container {
@@ -41,8 +40,31 @@
         box-shadow: none;
     }
 
-        .directory-section a {
+    .directory-section a {
         font-size: 25px;
+    }
+
+    .contact-info-sub-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 2rem 0;
+    }
+
+    .email-form {
+        width: 100%;
+    }
+
+    .email-form {
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+        box-shadow: 0px 20px 0px 0px #FDD908;
+        -webkit-box-shadow: 0px 20px 0px 0px #FDD908;
+        -moz-box-shadow: 0px 20px 0px 0px #FDD908;
     }
 
 }

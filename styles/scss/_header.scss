@@ -56,6 +56,12 @@ header a:hover::after {
     transform: scale(1);
 }
 
+.nav-underline {
+    border-bottom: $yellow 3px solid;
+    height: 0.5rem;
+    padding-bottom: 0.27rem;
+}
+
 h1 {
     text-transform: uppercase;
     font-family: $header-font;

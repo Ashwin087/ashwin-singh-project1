@@ -359,6 +359,12 @@ header a:hover::after {
           transform: scale(1);
 }
 
+.nav-underline {
+  border-bottom: #FDD908 3px solid;
+  height: 0.5rem;
+  padding-bottom: 0.27rem;
+}
+
 h1 {
   text-transform: uppercase;
   font-family: "IM Fell English", serif;
@@ -634,6 +640,7 @@ h1 {
           flex-direction: column;
   width: 70%;
   text-align: left;
+  text-align: center;
 }
 .vacation-section .wrapper h2 {
   font-size: 45px;
@@ -755,7 +762,7 @@ aside {
 }
 
 .blog-section {
-  width: 55%;
+  width: 66%;
 }
 
 .blog-sub-wrapper {
@@ -965,17 +972,20 @@ aside {
 aside {
   width: 20%;
   margin: 0 auto;
+  max-height: 970px;
 }
 
 .aside-container {
   background-color: #0d457F;
-  margin-top: 25%;
+  margin-top: 35%;
+  position: relative;
+  height: 100%;
 }
 
 .aside-container .image-container {
   width: 100%;
   position: relative;
-  top: -5%;
+  top: -3%;
   right: 15%;
 }
 
@@ -986,7 +996,7 @@ aside {
 .aside-sub-container {
   text-align: left;
   color: #ffffff;
-  padding: 35px 20px 30px;
+  padding: 0px 20px 3.5rem;
 }
 .aside-sub-container h2 {
   font-size: 25px;
@@ -1191,6 +1201,8 @@ aside {
   .home .boat-container {
     position: absolute;
     top: 0;
+    width: 50%;
+    right: 0;
   }
 
   .home .image-container {
@@ -1245,6 +1257,37 @@ aside {
         align-self: center;
     padding-top: 0px;
   }
+
+  .aside-sub-container {
+    text-align: left;
+    color: #ffffff;
+    padding: 2rem 20px 1.5rem;
+  }
+
+  .aside-container {
+    background-color: #0d457F;
+    margin-top: 25%;
+    position: absolute;
+    width: 25%;
+    left: 0;
+    min-width: 265px;
+    min-height: 900px;
+  }
+
+  .aside-container .image-container img {
+    width: 100%;
+  }
+
+  .aside-container .image-container {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .email-form {
+    width: 56%;
+  }
 }
 @media (max-width: 900px) {
   .vacation-section .wrapper h2,
@@ -1293,8 +1336,44 @@ aside {
   .directory-section a {
     font-size: 25px;
   }
+
+  .contact-info-sub-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 2rem 0;
+  }
+
+  .email-form {
+    width: 100%;
+  }
+
+  .email-form {
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 20px 0px 0px #FDD908;
+    -webkit-box-shadow: 0px 20px 0px 0px #FDD908;
+    -moz-box-shadow: 0px 20px 0px 0px #FDD908;
+  }
 }
 @media (max-width: 814px) {
+  h1 {
+    width: 100%;
+  }
+
   .home {
     height: 80vh;
     background-position: 30% 55%;
@@ -1315,11 +1394,11 @@ aside {
     top: 44.7vh;
   }
 
-  .nav-icon-container {
+  .home .nav-icon-container {
     display: contents;
   }
 
-  .fas.fa-bars {
+  .home .fas.fa-bars {
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -1408,6 +1487,64 @@ aside {
   .vacation-section .wrapper {
     text-align: center;
   }
+
+  aside {
+    display: none;
+  }
+
+  .blog-section {
+    width: 90%;
+  }
+
+  .blog-section h1 {
+    font-size: 60px;
+    width: 100%;
+  }
+
+  .blog-text-container h2 {
+    padding: 14.5% 0 0px;
+  }
+
+  .blog-section-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .blog-sub-wrapper {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .blog-post-container .image-container img {
+    -webkit-box-shadow: 20px 20px 0px 0px #FDD908;
+            box-shadow: 20px 20px 0px 0px #FDD908;
+    -moz-box-shadow: 20px 20px 0px 0px #FDD908;
+    top: 0px;
+    margin-top: 10%;
+    left: -30px;
+  }
+
+  .blog-text-container > * {
+    padding-left: 5%;
+  }
+
+  .blog-text-container::after {
+    right: 0;
+    left: 100%;
+  }
+
+  .comment-section {
+    padding-left: 5%;
+  }
+
+  .social-media-container ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media (max-width: 500px) {
   .home h1 {
@@ -1416,6 +1553,36 @@ aside {
 
   .home .image-container {
     min-width: 300px;
+  }
+
+  .blog nav,
+.contact nav {
+    display: none;
+  }
+
+  .blog .nav-icon-container,
+.contact .nav-icon-container {
+    display: contents;
+  }
+
+  .contact .fas.fa-bars,
+.blog .fas.fa-bars {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 30px;
+    color: white;
+  }
+
+  .blog h1 {
+    padding-top: 44vh;
+    font-size: 60px;
+  }
+
+  .contact h1 {
+    width: 100%;
+    padding-top: 19vh;
+    font-size: 60px;
   }
 
   .gallery ul li:nth-of-type(3) {
@@ -1427,7 +1594,7 @@ aside {
   }
 
   .text-container.grid-top-right {
-    padding: 3rem 0rem 0rem;
+    padding: 3rem 0rem 2rem;
   }
 
   .text-container.grid-bottom-left {
@@ -1441,6 +1608,65 @@ aside {
   .vacation-section .image-container img {
     height: 30vh;
   }
+
+  .blog-section {
+    width: 100%;
+  }
+
+  .comment-section .wrapper h2,
+.blog-text-container h2 {
+    font-size: 30px;
+  }
+
+  .comment-section .wrapper p,
+.blog-text-container p {
+    font-size: 16px;
+  }
+
+  .contact-info-sub-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 2rem 0px;
+  }
+
+  .contact-info-sub-container {
+    padding-bottom: 1rem;
+  }
+
+  .contact-info-form-section {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .email-form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .comment-form .user-info,
+.email-form .user-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #email {
+    margin: 2% 0;
+  }
+
+  .social-media-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 0 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 @media (max-width: 410px) {
   .directory-section .icon-container {
@@ -1449,5 +1675,23 @@ aside {
 
   ul li:nth-of-type(2) {
     display: none;
+  }
+
+  .email-form input[type=text],
+.email-form input[type=email],
+.email-form textarea,
+.comment-form input[type=text],
+.comment-form input[type=email],
+.comment-form textarea {
+    font-size: 18px;
+  }
+
+  .contact-info-sub-wrapper {
+    min-width: 300px;
+  }
+
+  .contact-info-form-section a {
+    font-style: normal;
+    font-size: 19px;
   }
 }

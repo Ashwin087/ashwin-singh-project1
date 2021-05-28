@@ -3,6 +3,8 @@
     .home .boat-container {
         position: absolute;
         top: 0;
+        width: 50%;
+    right: 0;
     }
 
     .home .image-container {
@@ -54,5 +56,36 @@
     .image-container.grid-bottom-right {
         align-self: center;
         padding-top: 0px;
+    }
+
+    .aside-sub-container {
+        text-align: left;
+        color: #ffffff;
+        padding: 2rem 20px 1.5rem;
+    }
+
+    .aside-container {
+        background-color: #0d457F;
+        margin-top: 25%;
+        position: absolute;
+        width: 25%;
+        left: 0;
+        min-width: 265px;
+        min-height: 900px;
+    }
+
+    .aside-container .image-container img {
+        width: 100%;
+    }
+
+    .aside-container .image-container {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .email-form {
+        width: 56%;
     }
 }
