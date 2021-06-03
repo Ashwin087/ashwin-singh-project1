@@ -9,9 +9,68 @@
         background-position: 30% 55%;
     }
 
-    .home nav {
+    // Nav Work Start
+    .nav-underline {
+        border: none;
+    }
+
+    header .image-container {
+        display: none;
+    } 
+
+    .blog .nav-icon-container,
+    .contact .nav-icon-container {
+        display: block;
+    }
+
+    
+    .blog .nav-icon-container,
+    .contact .nav-icon-container {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        font-size: 30px;
+        color: white;
+    }
+
+    .home nav ul {
+        background-color: lightskyblue;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: 250ms height ease-in-out;
+    }
+
+    .home nav li {
+        margin-right: 0;
+    }
+
+    nav ul {
+        background-color: lightskyblue;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+        transition: 250ms height ease-in-out;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+
+    .open {
+        height: 50vh !important;
+    }
+
+    .hidden {
         display: none;
     }
+    // Nav Work End
 
     .home h1{
         font-size: 60px;
@@ -28,6 +87,8 @@
         display: contents;
     }
 
+
+    .home .fas.fa-times,
     .home .fas.fa-bars {
         position: absolute;
         right: 2rem;

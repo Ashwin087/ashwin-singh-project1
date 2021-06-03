@@ -16,15 +16,16 @@
         <div class="home">
             <div class="wrapper">
                 <nav>
-                    <ul>
+                    <ul class="nav-bar">
                         <li><span class="nav-underline"><a href="./index.html">Home</a></span></li>
                         <li><a href="#">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="nav-icon-container">
-                    <i class="fas fa-bars"></i>
+                <div class="nav-icon-container" id="toggle-nav">
+                    <i class="fas fa-bars nav-icon"></i>
+                    <i class="fas fa-times nav-icon hidden"></i>
                 </div>
                 <h1>Boat Ride Adventures</h1>
             </div>
@@ -155,5 +156,7 @@
     <footer>
         <p class="copyright">Copyright © 2019 HackerYou</p>
     </footer>
+
+    <script src="./javascript/script.js"></script>
 </body>
 </html> 

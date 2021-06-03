@@ -202,9 +202,13 @@ margin-top: 1%;
 
 .gallery ul {
     @include flex-center;
+    overflow: hidden;
+    position: relative;
 }
 
 .gallery li:nth-child(2) {
     margin: 0 40px;
 }
+
+
 
